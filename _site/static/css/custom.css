@@ -1,0 +1,55 @@
+#navbar ul li {
+  border-right: 3px solid rgb(245, 223, 75);
+  position: relative;
+  top: 35px;
+}
+
+.nav > li.active > a {
+  background-color: transparent !important;
+  color: black !important;
+}
+
+.nav > li > a {
+  padding-top: 2px !important;
+  height: 55px !important;
+}
+
+#mail-ave-vox {
+  display: table;
+  background-color: rgb(255, 200, 31);
+  padding: 10px 15px;
+  margin: 10px auto;
+  min-width: 190px;
+  text-align: center;
+}
+
+#address-ave-vox {
+  color: rgb(255, 200, 31);
+  width: 190px;
+  display: table;
+  margin: 0 auto;
+}
+
+#address-ave-vox img {
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  height: 50px;
+}
+
+#address-ave-vox div {
+  display: inline-block;
+}
+#address-ave-vox span {
+  line-height: 50px;
+  vertical-align: bottom;
+}
+
+li#languages {
+  border: none !important;
+}
+
+li#languages a {
+  height: 20px !important;
+  padding: 4px;
+}
