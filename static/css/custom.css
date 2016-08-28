@@ -14,11 +14,16 @@
   height: 55px !important;
 }
 
+#mail-ave-vox a {
+  color: rgb(58, 58, 60);
+}
+
 #mail-ave-vox {
   display: table;
   background-color: rgb(255, 200, 31);
-  padding: 10px 15px;
+  padding: 15px;
   margin: 10px auto;
+  font-size: 16px;
   min-width: 190px;
   text-align: center;
 }
@@ -52,4 +57,19 @@ li#languages {
 li#languages a {
   height: 20px !important;
   padding: 4px;
+}
+
+
+
+section#project ul {
+    padding-left: 14px;
+    list-style: none;
+    color: white;
+}
+section#project ul li:before {
+    color: rgb(245, 223, 75);
+    content: "•";
+    position: relative;
+    left: -7px;
+    margin-left: -7px;
 }
