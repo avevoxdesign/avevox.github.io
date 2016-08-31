@@ -10,8 +10,14 @@
 }
 
 .nav > li > a {
+  text-align: center;
+  min-width: 105px;
   padding-top: 2px !important;
   height: 55px !important;
+}
+
+.nav > li:last-of-type > a {
+  min-width: 40px;
 }
 
 #mail-ave-vox a {
