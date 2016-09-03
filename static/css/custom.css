@@ -12,6 +12,7 @@ body {
   width: 100%;
 }
 
+section#project,
 section#about_me,
 section#link {
   display: table;
@@ -19,6 +20,7 @@ section#link {
   min-height: 700px;
 }
 
+section#project .container,
 section#about_me .container,
 section#link .container {
   display: table-cell;
@@ -39,7 +41,7 @@ section#link .container {
 
 .nav > li > a {
   text-align: center;
-  min-width: 105px;
+  min-width: 115px;
   padding-top: 2px !important;
   height: 55px !important;
 }
@@ -135,6 +137,10 @@ section#project ul li:before {
     min-width: 105px;
     padding-top: 2px !important;
     height: auto !important;
+  }
+
+  section#about_me img.we-are {
+    width: 100% !important;
   }
 
   section#about_me,
