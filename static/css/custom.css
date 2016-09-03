@@ -1,7 +1,22 @@
+@font-face {
+  font-family: 'myriad_pro';
+  src: font-url('fonts/myriad_pro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'myriad_pro';
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+
 section#about_me,
 section#link {
   display: table;
   width: 100%;
+  min-height: 700px;
 }
 
 section#about_me .container,
@@ -31,7 +46,7 @@ section#link .container {
 
 .nav > li:last-of-type > a {
   min-width: 60px;
-  text-align: right;
+  text-align: center;
 }
 
 
@@ -88,9 +103,9 @@ li#languages a {
 }
 
 section#project ul {
-    padding-left: 14px;
-    list-style: none;
-    color: white;
+  padding-left: 14px;
+  list-style: none;
+  color: white;
 }
 section#project ul li {
   line-height: 21px;
@@ -120,5 +135,10 @@ section#project ul li:before {
     min-width: 105px;
     padding-top: 2px !important;
     height: auto !important;
+  }
+
+  section#about_me,
+  section#link {
+    min-height: 300px;
   }
 }
