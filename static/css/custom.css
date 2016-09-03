@@ -15,7 +15,9 @@ body {
 section#project,
 section#about_me,
 section#link {
-  display: table;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   min-height: 700px;
 }
@@ -23,8 +25,8 @@ section#link {
 section#project .container,
 section#about_me .container,
 section#link .container {
-  display: table-cell;
-  vertical-align: middle;
+  /*display: table-cell;
+  vertical-align: middle;*/
 }
 
 #navbar ul li {
