@@ -90,7 +90,6 @@ section#link .container {
 
 li#languages {
   border: none !important;
-  position: absolute !important;
   right: 5px !important;
   top: 5px !important;
 }
@@ -146,5 +145,9 @@ section#project ul li:before {
   section#about_me,
   section#link {
     min-height: 300px;
+  }
+
+  li#languages {
+    position: relative !important;
   }
 }
