@@ -1,12 +1,25 @@
 @font-face {
-  font-family: 'myriad_pro';
-  src: font-url('fonts/myriad_pro.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'MyriadProIt';
+    src: font-url('fonts/MyriadProIt.eot');
+    src: font-url('fonts/MyriadProIt.eot') format('embedded-opentype'),
+         font-url('fonts/MyriadProIt.woff2') format('woff2'),
+         font-url('fonts/MyriadProIt.woff') format('woff'),
+         font-url('fonts/MyriadProIt.ttf') format('truetype'),
+         font-url('fonts/MyriadProIt.svg#MyriadProIt') format('svg');
+}
+
+@font-face {
+    font-family: 'MyriadProRegular';
+    src: font-url('fonts/MyriadProRegular.eot');
+    src: font-url('fonts/MyriadProRegular.eot') format('embedded-opentype'),
+         font-url('fonts/MyriadProRegular.woff2') format('woff2'),
+         font-url('fonts/MyriadProRegular.woff') format('woff'),
+         font-url('fonts/MyriadProRegular.ttf') format('truetype'),
+         font-url('fonts/MyriadProRegular.svg#MyriadProRegular') format('svg');
 }
 
 body {
-  font-family: 'myriad_pro';
+  font-family: 'MyriadProRegular';
   display: inline-block;
   text-align: left;
   width: 100%;
