@@ -35,6 +35,16 @@ section#link {
   min-height: 700px;
 }
 
+section#about_me {
+  height: 100vh;
+  background-color: rgb(253, 204, 23);
+}
+
+section#link {
+  height: 100vh;
+  background-color: #009994;
+}
+
 section#project .container,
 section#about_me .container,
 section#link .container {
