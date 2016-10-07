@@ -19,7 +19,8 @@
 }
 
 body {
-  font-family: 'MyriadProRegular';
+  font-family: 'MyriadProRegular', sans-serif;
+  font-family: sans-serif;
   display: inline-block;
   text-align: left;
   width: 100%;
