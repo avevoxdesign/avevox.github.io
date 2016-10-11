@@ -28,6 +28,7 @@ body {
 section#project,
 section#about_me,
 section#link {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,6 +70,17 @@ section#link {
   text-align: center;
 }
 
+.icon-arrow {
+  position: fixed;
+  bottom: 15px;
+  width: 88%;
+}
+
+.glyphicon.glyphicon-chevron-down {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+}
 
 #mail-ave-vox a {
   color: rgb(58, 58, 60);
@@ -114,6 +126,7 @@ li#languages {
 li#languages a {
   height: 20px !important;
   padding: 4px;
+  text-align: right;
 }
 
 .main-description div h2 {
@@ -176,7 +189,7 @@ section#project ul li:before {
   }
 
   section#about_me img.we-are {
-    width: 100% !important;
+    /*width: 100% !important;*/
   }
 
   section#about_me,
@@ -192,6 +205,12 @@ section#project ul li:before {
 @media (min-width: 1200px) {
   li#languages {
     width: 135px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  img.we-are.hidden {
+    display: block !important;
   }
 }
 
