@@ -212,6 +212,9 @@ section#project ul li:before {
   img.we-are.hidden {
     display: block !important;
   }
+  .main-description {
+    margin-top: 65px;
+  }
 }
 
 @media (max-width: 1200px) {
