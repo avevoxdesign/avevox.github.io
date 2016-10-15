@@ -37,7 +37,6 @@ section#link {
 }
 
 section#about_me {
-  height: 100vh;
   background-color: rgb(253, 204, 23);
 }
 
@@ -202,6 +201,10 @@ section#project ul li:before {
   }
 }
 
+.ave-text {
+  margin-top: 55px;
+}
+
 @media (min-width: 1200px) {
   li#languages {
     width: 135px !important;
@@ -213,7 +216,11 @@ section#project ul li:before {
     display: block !important;
   }
   .main-description {
-    margin-top: 140px;
+    margin-top: 150px;
+  }
+
+  .ave-text {
+    margin-top: 35px;
   }
 }
 
