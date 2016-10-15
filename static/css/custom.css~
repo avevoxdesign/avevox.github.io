@@ -1,12 +1,25 @@
 @font-face {
-  font-family: 'myriad_pro';
-  src: font-url('fonts/myriad_pro.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'MyriadProIt';
+    src: font-url('fonts/MyriadProIt.eot');
+    src: font-url('fonts/MyriadProIt.eot') format('embedded-opentype'),
+         font-url('fonts/MyriadProIt.woff2') format('woff2'),
+         font-url('fonts/MyriadProIt.woff') format('woff'),
+         font-url('fonts/MyriadProIt.ttf') format('truetype'),
+         font-url('fonts/MyriadProIt.svg#MyriadProIt') format('svg');
+}
+
+@font-face {
+    font-family: 'MyriadProRegular';
+    src: font-url('fonts/MyriadProRegular.eot');
+    src: font-url('fonts/MyriadProRegular.eot') format('embedded-opentype'),
+         font-url('fonts/MyriadProRegular.woff2') format('woff2'),
+         font-url('fonts/MyriadProRegular.woff') format('woff'),
+         font-url('fonts/MyriadProRegular.ttf') format('truetype'),
+         font-url('fonts/MyriadProRegular.svg#MyriadProRegular') format('svg');
 }
 
 body {
-  font-family: 'myriad_pro';
+  font-family: 'MyriadProRegular', sans-serif;
   display: inline-block;
   text-align: left;
   width: 100%;
@@ -15,18 +28,22 @@ body {
 section#project,
 section#about_me,
 section#link {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  min-height: 700px;
+  min-height: 100vh;
 }
 
-section#project .container,
-section#about_me .container,
-section#link .container {
-  /*display: table-cell;
-  vertical-align: middle;*/
+section#about_me {
+  height: 100vh;
+  background-color: rgb(253, 204, 23);
+}
+
+section#link {
+  height: 100vh;
+  background-color: #009994;
 }
 
 #navbar ul li {
@@ -53,6 +70,17 @@ section#link .container {
   text-align: center;
 }
 
+.icon-arrow {
+  position: fixed;
+  bottom: 15px;
+  width: 88%;
+}
+
+.glyphicon.glyphicon-chevron-down {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+}
 
 #mail-ave-vox a {
   color: rgb(58, 58, 60);
@@ -98,6 +126,7 @@ li#languages {
 li#languages a {
   height: 20px !important;
   padding: 4px;
+  text-align: right;
 }
 
 .main-description div h2 {
@@ -121,6 +150,26 @@ section#project ul li:before {
     margin-left: -7px;
 }
 
+.main-description > div img {
+  height: 56px;
+}
+
+.main-description div:nth-of-type(1) {
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
+}
+
+.main-description  div:nth-of-type(2) {
+  display: inline-block;
+}
+
+.main-description  div:nth-of-type(2) h2 {
+  font-size: 29px;
+  margin: 0;
+}
+
+
 @media(max-width: 767px) {
   #navbar ul li {
     border-right: none;
@@ -140,7 +189,7 @@ section#project ul li:before {
   }
 
   section#about_me img.we-are {
-    width: 100% !important;
+    /*width: 100% !important;*/
   }
 
   section#about_me,
@@ -159,6 +208,15 @@ section#project ul li:before {
   }
 }
 
+@media (max-width: 767px) {
+  img.we-are.hidden {
+    display: block !important;
+  }
+  .main-description {
+    margin-top: 140px;
+  }
+}
+
 @media (max-width: 1200px) {
   li#languages {
     width: 69px !important;
@@ -168,5 +226,23 @@ section#project ul li:before {
 @media (min-width: 1000px) {
   .navbar-header .navbar-brand {
     margin-left: 63px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main-description > div img {
+    height: 48px;
+  }
+
+  .main-description div:nth-of-type(1) {
+    margin-right: 10px;
+  }
+
+  .main-description  div:nth-of-type(2) h2 {
+    font-size: 27px;
+    line-height: 38px !important;
+  }
+  .main-description  div:nth-of-type(2) h2:nth-of-type(1) {
+    line-height: 18px !important;
   }
 }
